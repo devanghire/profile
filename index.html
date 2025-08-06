@@ -271,9 +271,9 @@
 								<li>AJAX, JSON</li>
 								<li>Third Party library integration.</li>
 								<li>Beginner in frontend technologies like React.js</li>
-								</li>
-							</ul>
 						</li>
+					</ul>
+					</li>
 				</div>
 				</ul>
 			</div>
@@ -343,10 +343,14 @@
 						style="border-color: #2196f3; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
 						<div class="resume-content mr-auto">
 							<h4 class="mb-3"><i class="fa fa-area-chart mr-3 text-primary"></i>Augusta</h4>
-							<p>The Richmondcounty restrictions County District Attorney’s Office prosecutes all felony crimes that occur in Richmondcounty (the Flint Judicial Circuit), including violations of law in unincorporated areas of the county. I have experience working on both the design and backend development including API implementation.</p>
+							<p>The Richmondcounty restrictions County District Attorney’s Office prosecutes all felony crimes
+								that occur in Richmondcounty (the Flint Judicial Circuit), including violations of law in
+								unincorporated areas of the county. I have experience working on both the design and backend
+								development including API implementation.</p>
 						</div>
 						<div class="resume-date text-md-right">
-							<span class="text-primary"><a href="https://richmondcountyrestrictions.com/">https://richmondcountyrestrictions.com/</a></span>
+							<span class="text-primary"><a
+									href="https://richmondcountyrestrictions.com/">https://richmondcountyrestrictions.com/</a></span>
 						</div>
 					</div>
 				</div>
@@ -363,23 +367,25 @@
 					<h2 class="text-center">Education</h2>
 					<div class="mb-5 heading-border"></div>
 				</div>
-				
+
 				<div class="col-5 educatonBox" style="margin-right:auto">
 					<div class="timeline-item">
 						<div class="circle-dot"></div>
 						<h6 class="timeline-date"><i class="fa fa-calendar"></i> 2013 - 2015</h6>
 						<h4 class="timeline-title">Master In Computer Science</h4>
-						<p class="timeline-text">Faculty of Technology and Engineering, <br>The Maharaja Sayajirao University of Baroda
+						<p class="timeline-text">Faculty of Technology and Engineering, <br>The Maharaja Sayajirao University
+							of Baroda
 							Postgraduate, June 2015 to June 2018</p>
 					</div>
 				</div>
-				
+
 				<div class="col-5 educatonBox">
 					<div class="timeline-item">
 						<div class="circle-dot"></div>
 						<h6 class="timeline-date"><i class="fa fa-calendar"></i> 2010 - 2013</h6>
 						<h4 class="timeline-title">Bachelor of Computer Applications</h4>
-						<p class="timeline-text">Takshashilaa Affiliated Collage Baroda,<br> Veer Narmad South Gujarat University Surat
+						<p class="timeline-text">Takshashilaa Affiliated Collage Baroda,<br> Veer Narmad South Gujarat
+							University Surat
 							graduate, June 2010 to June 2013</p>
 					</div>
 				</div>
@@ -403,15 +409,15 @@
 					</div>
 					<div class="row con-form">
 						<div class="col-md-12">
-							<input type="text" name="full-name" placeholder="Full Name" class="form-control">
+							<input type="text" id="full-name" name="full-name" placeholder="Full Name" class="form-control">
 						</div>
 						<div class="col-md-12">
-							<input type="text" name="email" placeholder="Email Id" class="form-control">
+							<input type="email" id="email" name="email" placeholder="Email Id" class="form-control">
 						</div>
 						<div class="col-md-12">
-							<input type="text" name="subject" placeholder="Subject" class="form-control">
+							<input type="text" id="subject" name="subject" placeholder="Subject" class="form-control">
 						</div>
-						<div class="col-md-12"><textarea name="" id=""></textarea></div>
+						<div class="col-md-12"><textarea name="message" id="message"></textarea></div>
 						<div class="col-md-12 sub-but">
 							<button class="btn btn-general btn-white" onclick="sendEmail()" role="button">Send</button>
 						</div>
@@ -420,10 +426,11 @@
 				<div class="col-md-4 col-sm-12 mt-5">
 					<div class="contact-cont2">
 						<div class="contact-add contact-box-desc">
-							<h3><i class="fa fa-map-marker cl-atlantis fa-sm"></i>&nbsp;  Address</h3>
+							<h3><i class="fa fa-map-marker cl-atlantis fa-sm"></i>&nbsp; Address</h3>
 							<p> Vadodara , Gujarat <br>
 								Bharat <small>(India)</small> 390001, <br>
-								<img src="img/india-flag-icon.svg" width="20" alt="India"></p>
+								<img src="img/india-flag-icon.svg" width="20" alt="India">
+							</p>
 						</div>
 						<div class="contact-phone contact-side-desc contact-box-desc">
 							<h3><i class="fa fa-phone cl-atlantis fa-sm"></i>&nbsp; Phone</h3>
@@ -432,7 +439,8 @@
 						<div class="contact-mail contact-side-desc contact-box-desc">
 							<h3><i class="fa fa-envelope-o cl-atlantis fa-sm"></i> Email</h3>
 							<address class="address-details-f">
-								Email: <a href="mailto:devanghire.webdev@gmail.com" class="">&nbsp; devanghire.webdev@gmail.com</a>
+								Email: <a href="mailto:devanghire.webdev@gmail.com" class="">&nbsp;
+									devanghire.webdev@gmail.com</a>
 							</address>
 							<ul class="list-inline social-icon-f top-data">
 								<li><a href="#" target="_empty"><i class="fa top-social fa-facebook"
@@ -459,7 +467,7 @@
 	<script src="js/counter/jquery.waypoints.min.js"></script>
 	<script src="js/counter/jquery.counterup.min.js"></script>
 	<script src="js/custom.js"></script>
-	<script src="https://smtpjs.com/v3/smtp.js"></script>
+
 	<script>
 		$(document).ready(function () {
 
@@ -488,27 +496,16 @@
 			});
 
 		});
+	</script>
 
-
-  function sendEmail() {
-    Email.send({
-      SecureToken: "ymfd-bxms-zawt-kfnn", 
-      To: 'devanghire.webdev@email.com',
-      From: "devanghire.webdev@email.com",
-      Subject: document.getElementById("subject").value,
-      Body: `
-        <strong>Name:</strong> ${document.getElementById("full-name").value}<br>
-        <strong>Email:</strong> ${document.getElementById("email").value}<br>
-        <strong>Message:</strong><br>${document.getElementById("message").value}
-      `
-    }).then(
-      message => alert("Email Sent Successfully: " + message)
-    ).catch(
-      error => alert("Failed to send email: " + error)
-    );
-  }
-
-
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="email.js"></script>
+	<script type="text/javascript">
+		(function () {
+			emailjs.init({
+				publicKey: "GsHrgnjNefBjOcsKl",
+			});
+		})();
 	</script>
 </body>
 
