@@ -7,7 +7,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="shortcut icon" href="img/animated/icons8-user.gif" type="image/gif">
 	<title>DevangHire - Profile</title>
 
 	<!-- Global stylesheets -->
@@ -32,6 +32,16 @@
 	.educatonBox:hover {
 		box-shadow: 10px 10px 10px;
 	}
+    .profile-img {
+        transition: transform 0.9s ease-in-out;
+    }
+
+    .profile-img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px rgba(20, 219, 153, 0.8);
+    }
+
+
 </style>
 
 <body id="page-top">
@@ -40,7 +50,7 @@
 		<a class="navbar-brand js-scroll-trigger" href="#page-top">
 			<span class="d-block d-lg-none  mx-0 px-0"><img src="img/logo-white.png" alt="" class="img-fluid"></span>
 			<span class="d-none d-lg-block">
-				<img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/pro.png" alt="">
+				<img class="img-fluid img-profile rounded-circle mx-auto mb-2 profile-img" src="img/pro.png" alt="">
 			</span>
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -50,7 +60,7 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<a class="nav-link js-scroll-trigger" href="#home">Profile</a>
+					<a class="nav-link js-scroll-trigger " href="#home">Profile</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
@@ -89,7 +99,7 @@
 					<span class="text-secondary">Hire</span>
 				</h1>
 				<div class="subheading mb-4">Web Developer
-					<p><small>PHP | Laravel | Codeigniter</small></p>
+					<p><span>PHP | Laravel | Codeigniter</span></p>
 					<!-- <a href="#">THEMSBIT</a> -->
 				</div>
 
@@ -429,29 +439,29 @@
 				<div class="col-md-4 col-sm-12 mt-5">
 					<div class="contact-cont2">
 						<div class="contact-add contact-box-desc">
-							<h3><i class="fa fa-map-marker cl-atlantis fa-sm"></i>&nbsp; Address</h3>
-							<p> Vadodara , Gujarat <br>
+							<img src="img/animated/icons8-map.gif" width="35" alt="India">
+							<p> Location :  Vadodara , Gujarat <br>
 								Bharat <small>(India)</small> 390001, <br>
 								<img src="img/india-flag-icon.svg" width="20" alt="India">
 							</p>
 						</div>
 						<div class="contact-phone contact-side-desc contact-box-desc">
-							<h3><i class="fa fa-phone cl-atlantis fa-sm"></i>&nbsp; Phone</h3>
-							<p>+91 7878712158</p>
+							<img src="img/animated/icons8-phone.gif" width="35" alt="India">
+							<p>Phone : +91 7878712158</p>
 						</div>
 						<div class="contact-mail contact-side-desc contact-box-desc">
-							<h3><i class="fa fa-envelope-o cl-atlantis fa-sm"></i> Email</h3>
+							<h3><img src="img/animated/icons8-email.gif" width="35" alt="Email"></h3>
 							<address class="address-details-f">
 								Email: <a href="mailto:devanghire.webdev@gmail.com" class="">&nbsp;
 									devanghire.webdev@gmail.com</a>
 							</address>
 							<ul class="list-inline social-icon-f top-data">
-								<li><a href="https://www.facebook.com/devang.hire" target="_empty"><i class="fa top-social fa-facebook"
-											style="color: #4267b2; border-color:#4267b2;"></i></a></li>
+								<li><a href="https://www.facebook.com/devang.hire" target="_empty">
+                                    <i class="fa top-social fa-facebook"style="color: #4267b2; border-color:#4267b2;"></i></a></li>
 								<li><a href="https://x.com/devang_hire" target="_empty"><i class="fa top-social fa-twitter"
 											style="color: #4AB3F4; border-color:#4AB3F4;"></i></a></li>
-								<li><a href="#" target="_empty"><i class="fa top-social fa-google-plus"
-											style="color: #e24343; border-color:#e24343;"></i></a></li>
+								<li><a href="#" target="_empty"><i class="fa top-social fa-google-plus " 
+											style="color: #e24343; border-color:#e24343; "></i></a></li>
 							</ul>
 						</div>
 					</div>
